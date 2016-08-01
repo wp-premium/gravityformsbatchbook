@@ -5,7 +5,7 @@ GFForms::include_feed_addon_framework();
 class GFBatchbook extends GFFeedAddOn {
 	
 	protected $_version = GF_BATCHBOOK_VERSION;
-	protected $_min_gravityforms_version = '1.9.12';
+	protected $_min_gravityforms_version = '1.9.14.26';
 	protected $_slug = 'gravityformsbatchbook';
 	protected $_path = 'gravityformsbatchbook/batchbook.php';
 	protected $_full_path = __FILE__;
@@ -37,6 +37,24 @@ class GFBatchbook extends GFFeedAddOn {
 			self::$_instance = new self;
 
 		return self::$_instance;
+		
+	}
+
+	/**
+	 * Register needed plugin hooks and PayPal delayed payment support.
+	 * 
+	 * @access public
+	 * @return void
+	 */
+	public function init() {
+		
+		parent::init();
+		
+		$this->add_delayed_payment_support(
+			array(
+				'option_label' => esc_html__( 'Create person in Batchbook only when payment is received.', 'gravityformsbatchbook' )
+			)
+		);
 		
 	}
 
@@ -254,21 +272,21 @@ class GFBatchbook extends GFFeedAddOn {
 				'name'          => 'first_name',
 				'label'         => esc_html__( 'First Name', 'gravityformsbatchbook' ),
 				'required'      => true,
-				'field_type'    => array( 'name' ),
+				'field_type'    => array( 'name', 'text', 'hidden' ),
 				'default_value' => $this->get_first_field_by_type( 'name', '3' ),
 			),
 			array(	
 				'name'          => 'last_name',
 				'label'         => esc_html__( 'Last Name', 'gravityformsbatchbook' ),
 				'required'      => true,
-				'field_type'    => array( 'name' ),
+				'field_type'    => array( 'name', 'text', 'hidden' ),
 				'default_value' => $this->get_first_field_by_type( 'name', '6' ),
 			),
 			array(	
 				'name'          => 'email_address',
 				'label'         => esc_html__( 'Email Address', 'gravityformsbatchbook' ),
 				'required'      => true,
-				'field_type'    => array( 'email' ),
+				'field_type'    => array( 'email', 'hidden' ),
 				'default_value' => $this->get_first_field_by_type( 'email' ),
 			),
 		);
@@ -475,6 +493,18 @@ class GFBatchbook extends GFFeedAddOn {
 	public function can_create_feed() {
 		
 		return $this->initialize_api();
+		
+	}
+
+	/**
+	 * Enable feed duplication.
+	 * 
+	 * @access public
+	 * @return bool
+	 */
+	public function can_duplicate_feed() {
+		
+		return true;
 		
 	}
 
