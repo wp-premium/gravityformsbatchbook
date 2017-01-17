@@ -131,7 +131,7 @@ class GFBatchbook extends GFFeedAddOn {
 		
 		$description  = '<p>';
 		$description .= sprintf(
-			esc_html__( 'Batchbook is a contact management tool makes it easy to track communications, deals and people. Use Gravity Forms to collect customer information and automatically add them to your Batchbook account. If you don\'t have a Batchbook account, you can %1$s sign up for one here.%2$s', 'gravityformsbatchbook' ),
+			esc_html__( 'Batchbook is a contact management tool that makes it easy to track communications, deals and people. Use Gravity Forms to collect customer information and automatically add it to your Batchbook account. If you don\'t have a Batchbook account, you can %1$s sign up for one here.%2$s', 'gravityformsbatchbook' ),
 			'<a href="http://www.batchbook.com/" target="_blank">', '</a>'
 		);
 		$description .= '</p>';
@@ -498,11 +498,14 @@ class GFBatchbook extends GFFeedAddOn {
 
 	/**
 	 * Enable feed duplication.
-	 * 
+	 *
 	 * @access public
+	 *
+	 * @param int|array $id The ID of the feed to be duplicated or the feed object when duplicating a form.
+	 *
 	 * @return bool
 	 */
-	public function can_duplicate_feed() {
+	public function can_duplicate_feed( $id ) {
 		
 		return true;
 		
@@ -965,8 +968,9 @@ class GFBatchbook extends GFFeedAddOn {
 			$job_title      = isset( $person_custom_fields['title'] ) ? $this->get_field_value( $form, $entry, $person_custom_fields['title'] ) : '';
 			
 			/* If the company name is empty, move on. */
-			if ( rgblank( $company_name ) )
-				continue;
+			if ( rgblank( $company_name ) ) {
+				return $person;
+			}
 			
 			/* Do a search for existing companies. */
 			$existing_companies = $this->api->get_companies_by_name( $company_name );
