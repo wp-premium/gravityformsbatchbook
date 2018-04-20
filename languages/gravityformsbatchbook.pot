@@ -1,13 +1,13 @@
-# Copyright 2009-2017 Rocketgenius, Inc.
+# Copyright 2009-2018 Rocketgenius, Inc.
 msgid ""
 msgstr ""
-"Project-Id-Version: Gravity Forms Batchbook Add-On 1.2\n"
+"Project-Id-Version: Gravity Forms Batchbook Add-On 1.3\n"
 "Report-Msgid-Bugs-To: http://www.gravtiyhelp.com\n"
-"POT-Creation-Date: 2017-01-05 19:23:20+00:00\n"
+"POT-Creation-Date: 2018-04-10 16:39:47+00:00\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"PO-Revision-Date: 2018-MO-DA HO:MI+ZONE\n"
 "Last-Translator: Rocketgenius <customerservice@rocketgenius.com>\n"
 "Language-Team: Rocketgenius <customerservice@rocketgenius.com>\n"
 "X-Generator: Gravity Forms Build Server\n"
@@ -24,23 +24,23 @@ msgstr ""
 "X-Poedit-SourceCharset: utf-8\n"
 "X-Textdomain-Support: yes\n"
 
-#: class-gf-batchbook.php:55
+#: class-gf-batchbook.php:187
 msgid "Create person in Batchbook only when payment is received."
 msgstr ""
 
-#: class-gf-batchbook.php:99
+#: class-gf-batchbook.php:241
 msgid "Account URL"
 msgstr ""
 
-#: class-gf-batchbook.php:107
+#: class-gf-batchbook.php:249
 msgid "API Token"
 msgstr ""
 
-#: class-gf-batchbook.php:115
+#: class-gf-batchbook.php:257
 msgid "Batchbook settings have been updated."
 msgstr ""
 
-#: class-gf-batchbook.php:134
+#: class-gf-batchbook.php:278
 msgid ""
 "Batchbook is a contact management tool that makes it easy to track "
 "communications, deals and people. Use Gravity Forms to collect customer "
@@ -48,201 +48,207 @@ msgid ""
 "don't have a Batchbook account, you can %1$s sign up for one here.%2$s"
 msgstr ""
 
-#: class-gf-batchbook.php:142
+#: class-gf-batchbook.php:287
 msgid ""
 "Gravity Forms Batchbook Add-On requires your account URL and API Key, which "
 "can be found on your Personal Settings page."
 msgstr ""
 
-#: class-gf-batchbook.php:165
+#: class-gf-batchbook.php:321
 msgid "Feed Name"
 msgstr ""
 
-#: class-gf-batchbook.php:170 class-gf-batchbook.php:523
+#: class-gf-batchbook.php:328 class-gf-batchbook.php:731
 msgid "Name"
 msgstr ""
 
-#: class-gf-batchbook.php:170
+#: class-gf-batchbook.php:329
 msgid "Enter a feed name to uniquely identify this setup."
 msgstr ""
 
-#: class-gf-batchbook.php:177
+#: class-gf-batchbook.php:335
 msgid "Person Details"
 msgstr ""
 
-#: class-gf-batchbook.php:181 class-gf-batchbook.php:184
+#: class-gf-batchbook.php:339 class-gf-batchbook.php:344
 msgid "Map Fields"
 msgstr ""
 
-#: class-gf-batchbook.php:184
+#: class-gf-batchbook.php:345
 msgid ""
 "Select which Gravity Form fields pair with their respective Batchbook "
 "fields. Batchbook custom fields must be a text field type to be mappable."
 msgstr ""
 
-#: class-gf-batchbook.php:195
+#: class-gf-batchbook.php:357
 msgid "Tags"
 msgstr ""
 
-#: class-gf-batchbook.php:201
+#: class-gf-batchbook.php:363
 msgid "About"
 msgstr ""
 
-#: class-gf-batchbook.php:207 class-gf-batchbook.php:209
+#: class-gf-batchbook.php:369 class-gf-batchbook.php:373
 msgid "Update Person"
 msgstr ""
 
-#: class-gf-batchbook.php:209
+#: class-gf-batchbook.php:374
 msgid ""
 "If enabled and an existing person is found, their contact details will "
 "either be replaced or appended. Job title and company will be replaced "
 "whether replace or append is chosen."
 msgstr ""
 
-#: class-gf-batchbook.php:212
+#: class-gf-batchbook.php:378
 msgid "Update Person if already exists"
 msgstr ""
 
-#: class-gf-batchbook.php:218
+#: class-gf-batchbook.php:384
 msgid "and replace existing data"
 msgstr ""
 
-#: class-gf-batchbook.php:222
+#: class-gf-batchbook.php:388
 msgid "and append new data"
 msgstr ""
 
-#: class-gf-batchbook.php:230
+#: class-gf-batchbook.php:396
 msgid "Mark as Champion"
 msgstr ""
 
-#: class-gf-batchbook.php:235
+#: class-gf-batchbook.php:401
 msgid "Mark Person as Champion"
 msgstr ""
 
-#: class-gf-batchbook.php:244
+#: class-gf-batchbook.php:408
 msgid "Feed Conditional Logic"
 msgstr ""
 
-#: class-gf-batchbook.php:249 class-gf-batchbook.php:252
+#: class-gf-batchbook.php:413 class-gf-batchbook.php:418
 msgid "Conditional Logic"
 msgstr ""
 
-#: class-gf-batchbook.php:250
+#: class-gf-batchbook.php:414
 msgid "Enable"
 msgstr ""
 
-#: class-gf-batchbook.php:251
+#: class-gf-batchbook.php:415
 msgid "Export to Batchbook if"
 msgstr ""
 
-#: class-gf-batchbook.php:252
+#: class-gf-batchbook.php:419
 msgid ""
 "When conditional logic is enabled, form submissions will only be exported "
 "to Batchbook when the condition is met. When disabled, all form submissions "
 "will be posted."
 msgstr ""
 
-#: class-gf-batchbook.php:273
+#: class-gf-batchbook.php:443
 msgid "First Name"
 msgstr ""
 
-#: class-gf-batchbook.php:280
+#: class-gf-batchbook.php:450
 msgid "Last Name"
 msgstr ""
 
-#: class-gf-batchbook.php:287 class-gf-batchbook.php:317
+#: class-gf-batchbook.php:457 class-gf-batchbook.php:492
 msgid "Email Address"
 msgstr ""
 
-#: class-gf-batchbook.php:306
+#: class-gf-batchbook.php:481
 msgid "Choose a Field"
 msgstr ""
 
-#: class-gf-batchbook.php:310
+#: class-gf-batchbook.php:485
 msgid "Job Title"
 msgstr ""
 
-#: class-gf-batchbook.php:314
+#: class-gf-batchbook.php:489
 msgid "Company Name"
 msgstr ""
 
-#: class-gf-batchbook.php:320 class-gf-batchbook.php:341
-#: class-gf-batchbook.php:370 class-gf-batchbook.php:399
+#: class-gf-batchbook.php:495 class-gf-batchbook.php:516
+#: class-gf-batchbook.php:545 class-gf-batchbook.php:574
 msgid "Work"
 msgstr ""
 
-#: class-gf-batchbook.php:324 class-gf-batchbook.php:349
-#: class-gf-batchbook.php:374 class-gf-batchbook.php:403
+#: class-gf-batchbook.php:499 class-gf-batchbook.php:524
+#: class-gf-batchbook.php:549 class-gf-batchbook.php:578
 msgid "Home"
 msgstr ""
 
-#: class-gf-batchbook.php:328 class-gf-batchbook.php:357
-#: class-gf-batchbook.php:386 class-gf-batchbook.php:407
+#: class-gf-batchbook.php:503 class-gf-batchbook.php:532
+#: class-gf-batchbook.php:561 class-gf-batchbook.php:582
 msgid "Other"
 msgstr ""
 
-#: class-gf-batchbook.php:334
+#: class-gf-batchbook.php:509
 msgid "Phone Number"
 msgstr ""
 
-#: class-gf-batchbook.php:337 class-gf-batchbook.php:366
-#: class-gf-batchbook.php:395
+#: class-gf-batchbook.php:512 class-gf-batchbook.php:541
+#: class-gf-batchbook.php:570
 msgid "Main"
 msgstr ""
 
-#: class-gf-batchbook.php:345
+#: class-gf-batchbook.php:520
 msgid "Mobile"
 msgstr ""
 
-#: class-gf-batchbook.php:353
+#: class-gf-batchbook.php:528
 msgid "Fax"
 msgstr ""
 
-#: class-gf-batchbook.php:363
+#: class-gf-batchbook.php:538
 msgid "Address"
 msgstr ""
 
-#: class-gf-batchbook.php:378
+#: class-gf-batchbook.php:553
 msgid "Billing"
 msgstr ""
 
-#: class-gf-batchbook.php:382
+#: class-gf-batchbook.php:557
 msgid "Shipping"
 msgstr ""
 
-#: class-gf-batchbook.php:392
+#: class-gf-batchbook.php:567
 msgid "Website"
 msgstr ""
 
-#: class-gf-batchbook.php:524
+#: class-gf-batchbook.php:732
 msgid "Action"
 msgstr ""
 
-#: class-gf-batchbook.php:538
+#: class-gf-batchbook.php:749
 msgid "Create New Person"
 msgstr ""
 
-#: class-gf-batchbook.php:558
+#: class-gf-batchbook.php:784
 msgid "Feed was not processed because API was not initialized."
 msgstr ""
 
-#: class-gf-batchbook.php:572 class-gf-batchbook.php:647
+#: class-gf-batchbook.php:798
 msgid "Person was not created because email address was not provided."
 msgstr ""
 
-#: class-gf-batchbook.php:639
+#: class-gf-batchbook.php:905
 msgid "Person was not created because first and/or last name were not provided."
 msgstr ""
 
-#: class-gf-batchbook.php:687
+#: class-gf-batchbook.php:915
+msgid ""
+"Person was not created because an empty or invalid email address was "
+"provided."
+msgstr ""
+
+#: class-gf-batchbook.php:960
 msgid "Person could not be created. %s"
 msgstr ""
 
-#: class-gf-batchbook.php:861
+#: class-gf-batchbook.php:1128
 msgid "Person could not be updated. %s"
 msgstr ""
 
-#: class-gf-batchbook.php:1016
+#: class-gf-batchbook.php:1324
 msgid "Company could not be created. %s"
 msgstr ""
 
@@ -251,7 +257,7 @@ msgid "Gravity Forms Batchbook Add-On"
 msgstr ""
 
 #. Plugin URI of the plugin/theme
-msgid "http://www.gravityforms.com"
+msgid "https://www.gravityforms.com"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -265,5 +271,5 @@ msgid "rocketgenius"
 msgstr ""
 
 #. Author URI of the plugin/theme
-msgid "http://www.rocketgenius.com"
+msgid "https://www.rocketgenius.com"
 msgstr ""
